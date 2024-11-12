@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(240, 245, 247);
+    font-family: "Roboto", serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 100px;
+    padding-top: 20px;
+}
+.right-nav{
+    display: flex;
+    align-items: center;
+}
+.right-nav p{
+    padding-right: 20px;
+}
+.right-nav a{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.left-nav{
+    font-weight: 600;
+    font-size: 17px;
+}
+.learn{
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+}
+.master{
+    font-size: 12px;
+    background-color: rgb(200, 213, 218);
+    border: 1px solid lightblue;
+    width: 125px;
+    height: 25px;
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-bottom: 20px;
+    color: grey;
+}
+.section1{
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 110px;
+}
+.section1 h1{
+    max-width: 700px;
+    margin-inline: auto;
+}
+.unlock-course{
+    font-size: 15px;
+    color: rgba(95, 115, 121, 0.664);
+    max-width: 650px;
+    margin-inline: auto;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 1.5;
+}
+.price{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    width: fit-content;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-inline: auto;
+    margin-top: 40px;
+}
+.price-cl{
+    color: rgba(255, 255, 255, 0.75);
+    background-color: blue;
+    padding-left: 5px;
+    text-decoration: line-through;
+}
+.payment{
+    color: rgba(95, 115, 121, 0.664);
+    font-size: 12px;
+    text-align: center;
+    padding-top: 20px;
+}
+.promo{
+    background-color: rgb(221, 234, 238);
+    border: 1px solid lightblue;
+    padding: 7px 27px;
+    border-radius: 5px;
+    transform: rotate(-5deg);
+    margin-block: 30px 100px;
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 500;
+    margin-inline: auto;
+
+}
+.images{
+    display: flex;
+    max-width: 1078px;
+    margin-inline: auto;
+    gap: 9px;
+}
+.images img{
+    max-width: 215px;
+    border-radius: 7px 7px;
+}
+.shots{
+    color: rgba(95, 115, 121, 0.664);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 15px 50px;
+    font-weight: 500;
+}
