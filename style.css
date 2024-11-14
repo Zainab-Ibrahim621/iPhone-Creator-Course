@@ -5,11 +5,15 @@
     background-color: rgb(240, 245, 247);
     font-family: "Roboto", serif;
 }
+img{
+    max-width: 100%;
+}
 nav{
     display: flex;
     justify-content: space-between;
     padding-inline: 100px;
     padding-top: 20px;
+    align-items: center;
 }
 .right-nav{
     display: flex;
@@ -23,7 +27,7 @@ nav{
     background-color: blue;
     color: white;
     width: 150px;
-    height: 30px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,17 +43,16 @@ nav{
 }
 .master{
     font-size: 12px;
-    background-color: rgb(200, 213, 218);
+    background-color: rgb(202, 227, 236);
     border: 1px solid lightblue;
-    width: 125px;
-    height: 25px;
+    width: fit-content;
+    padding: 3px 10px;
     border-radius: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-inline: auto;
     margin-bottom: 20px;
     color: grey;
+}
+.margin-auto{
+    margin-inline: auto;
 }
 .section1{
     font-weight: 400;
@@ -115,7 +118,7 @@ nav{
     gap: 9px;
 }
 .images img{
-    max-width: 215px;
+    max-width: 208px;
     border-radius: 7px 7px;
 }
 .shots{
@@ -126,4 +129,66 @@ nav{
     align-items: center;
     padding-block: 15px 50px;
     font-weight: 500;
+}
+.learning{
+    font-size: 35px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 50PX;
+}
+.photos{
+    display: flex;
+    color: rgb(60, 63, 65);
+    max-width: 1082px;
+    margin-inline: auto;
+    gap: 10px;
+}
+.what-to-learn{
+    margin-top: 20px;
+}
+.what-to-learn p{
+    font-size: 14px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+.why-this-course{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    max-width: 1000px;
+    margin-inline: auto;
+    margin-bottom: 60PX;
+}
+.for-all-levels{
+    margin-block: 10px;
+    color: rgb(60, 63, 65); 
+    display: block;
+
+    
+}
+.for-all-levels h3{
+    padding-block: 5px 10px;
+}
+.for-all-levels p{
+    font-size: 13px;
+}
+.camera img{
+   height: 100%;
+   border-radius: 9px;
+   max-width: 550PX;
+}
+.section4{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+        max-width: 1000px;
+        margin-inline: auto;
+        margin-bottom: 60PX;
+        color: rgb(60, 63, 65);
+}
+
+@media(max-width:960px){
+    .photos{
+        flex-wrap: wrap;
+    }
 }
