@@ -38,8 +38,9 @@ nav{
     font-size: 17px;
 }
 .learn{
-    font-family: "Tangerine", cursive;
-    font-weight: 700;
+    font-family: "Instrument Serif", serif;
+    font-weight: 200;
+    font-style: italic;
 }
 .master{
     font-size: 12px;
@@ -63,7 +64,7 @@ nav{
     max-width: 700px;
     margin-inline: auto;
 }
-.unlock-course{
+.unlock-course {
     font-size: 15px;
     color: rgba(95, 115, 121, 0.664);
     max-width: 650px;
@@ -177,18 +178,84 @@ nav{
    border-radius: 9px;
    max-width: 550PX;
 }
-.section4{
+.flex{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 70px;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 50px;
         max-width: 1000px;
-        margin-inline: auto;
+        margin-inline: auto; 
         margin-bottom: 60PX;
         color: rgb(60, 63, 65);
+        align-items: center;
 }
-
-@media(max-width:960px){
-    .photos{
-        flex-wrap: wrap;
+.second-div img{
+    border-radius: 10px;
+    max-height: 500px;
+    width: 100%;
+}
+.firdt-div h2{
+    color: black;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.value{
+    padding-bottom: 20px;
+    font-size: 13px;
+    color: black;
+}
+.value2{
+    font-size: 15px;
+    color: rgb(60, 63, 65);
+}
+.modern{
+    font-weight: 500;
+    font-size: 14px;
+}
+.Lightroom{
+    font-size: 14px;
+    padding-block: 30px;
+}
+.firdt-div a{
+    display: block;
+    color: blue;
+    font-size: 13px;
+    line-height: 20px;
+    text-decoration: none;
+}
+.hamburger{
+    display: none;
+}
+.pack{
+    padding-top: 20px;
+    color: black;
+}
+.section5 p{
+    text-align: center;
+    font-size: 13px;
+    color: rgb(60, 63, 65);
+}
+.section5 h2{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+@media(max-width:809px){
+    .learn{
+        font-size: 35px;
+        text-align: center;
+    }
+    .section1 h1{
+        font-size: 35px;
+        text-align: center;
+        font-weight: 500;
+    }
+    .right-nav{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    nav{
+        padding-inline: 20px;
     }
 }
