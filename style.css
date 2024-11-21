@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(240, 245, 247);
     font-family: "Roboto", serif;
 }
 img{
@@ -198,6 +197,23 @@ nav{
     font-size: 30px;
     padding-bottom: 20px;
 }
+.get-started{
+    text-align: center;
+    font-size: 30px;
+}
+.section6{
+    background-color: rgba(183, 220, 233, 0.432); 
+    max-width: 1000px;
+    margin-inline: auto;
+    margin-block: 30px;
+    padding-block: 50px;
+    border-radius: 10px;
+    border: 1px solid rgba(173, 216, 230, 0.473);
+}
+.win{
+    background-color: rgb(221, 234, 238);
+    border: 1px solid lightblue;
+}
 .value{
     padding-bottom: 20px;
     font-size: 13px;
@@ -238,6 +254,16 @@ nav{
     text-align: center;
     font-size: 25px;
     padding-bottom: 30px;
+}
+.section5-images{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    padding-inline: 27px;
+    gap: 15px;
+    margin-block: 30px;
+}
+.section5 img{
+    border-radius: 10px;
 }
 @media(max-width:809px){
     .learn{
