@@ -43,7 +43,8 @@ nav{
 }
 .master{
     font-size: 12px;
-    background-color: rgb(202, 227, 236);
+    background: rgb(151,240,239);
+    background: linear-gradient(90deg, rgba(151,240,239,1) 0%, rgb(170, 250, 226) 100%, rgba(175,255,230,1) 100%);
     border: 1px solid lightblue;
     width: fit-content;
     padding: 3px 10px;
@@ -99,7 +100,8 @@ nav{
     padding-top: 20px;
 }
 .promo{
-    background-color: rgb(221, 234, 238);
+    background: rgb(255,219,253);
+    background: linear-gradient(90deg, rgba(255,219,253,1) 0%, rgba(210,252,234,1) 44%, rgba(255,246,171,1) 96%);
     border: 1px solid lightblue;
     padding: 7px 27px;
     border-radius: 5px;
@@ -113,9 +115,10 @@ nav{
 }
 .images{
     display: flex;
-    max-width: 1078px;
-    margin-inline: auto;
+    max-width: 100vw;
+    /* margin-inline: auto; */
     gap: 9px;
+    overflow: hidden;
 }
 .images img{
     max-width: 208px;
@@ -137,7 +140,8 @@ nav{
     margin-bottom: 50PX;
 }
 .photos{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     color: rgb(60, 63, 65);
     max-width: 1082px;
     margin-inline: auto;
@@ -145,6 +149,8 @@ nav{
 }
 .what-to-learn{
     margin-top: 20px;
+    /* width: 260px; */
+
 }
 .what-to-learn p{
     font-size: 14px;
@@ -211,7 +217,8 @@ nav{
     border: 1px solid rgba(188, 214, 223, 0.473);
 }
 .Win{
-    background-color: rgb(221, 234, 238);
+    background: rgb(255,219,253);
+    background: linear-gradient(90deg, rgba(255,219,253,1) 0%, rgba(210,252,234,1) 44%, rgba(255,246,171,1) 96%);
     border: 1px solid lightblue;
     text-decoration: none;
     margin-block: 30px 100px;
@@ -226,18 +233,71 @@ nav{
     align-items: center;
 
 }
+.what-to-learn img{
+    width: 30px;
+    background-color: rgba(168, 167, 167, 0.295);
+    border: 1px solid rgba(170, 165, 165, 0.527);
+    border-radius: 5px;
+    padding: 5px;
+}
 .section6{
-    background-color: rgba(111, 124, 129, 0.432); 
-    max-width: 1000px; 
+    background-color: rgba(141, 149, 153, 0.233); 
+    max-width:  760px; 
     margin-inline: auto;
     border-radius: 10px;
-    border: 1px solid rgba(188, 214, 223, 0.473);
-    
+    border: 1px solid rgba(188, 214, 223, 0.473);   
+    margin-bottom: 30px; 
+}
+.sec6{
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 .section6 img{
-    transform: rotate(270deg);
-    width: 400px;
+    width: 200px;
+
+}
+.pro16{
+    padding-top: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.section7{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 760px;
     margin-inline: auto;
+    gap: 20px;
+}
+.section7 img{
+    max-width:  200px;
+    display: block;
+    margin-inline: auto;
+}
+.first-div{
+    background-color: rgba(141, 149, 153, 0.233);
+    border-radius: 10px;
+    border: 1px solid rgba(188, 214, 223, 0.473); 
+    height: 180px;
+}
+.footer{
+    text-align: center;
+    display: flex;
+    gap: 10px; 
+    justify-content: center;
+    padding-top: 50px;
+}
+.div-2{
+    background-color: rgba(141, 149, 153, 0.233);
+    border-radius: 10px;
+    border: 1px solid rgba(188, 214, 223, 0.473); 
+    height: 180px;
+}
+.reserve{
+    color: grey;
+    padding-block: 30px 40px;
+    font-size: 14px;
+    text-align: center;
 }
 .buy{
     color: rgb(109, 109, 109);
@@ -325,4 +385,27 @@ nav{
     nav{
         padding-inline: 20px;
     }
+    .promo{
+        display: none;
+    }
 }
+@media(max-width:956px){
+    .photos{
+        margin-left: 30px;
+        grid-template-columns:  1fr 1fr;
+    }
+}
+@media(max-width:960px){
+    .why-this-course{
+        grid-template-columns: 0.5fr 1fr;
+        gap: 16px;
+    }
+}
+@media(max-width:810px){
+    .photos{
+        display: block;
+    }
+    .why-this-course{
+        display: block;
+    }
+}@media
