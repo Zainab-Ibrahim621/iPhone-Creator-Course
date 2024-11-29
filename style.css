@@ -159,7 +159,7 @@ nav{
 }
 .why-this-course{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: 70px;
     max-width: 1000px;
     margin-inline: auto;
@@ -181,7 +181,7 @@ nav{
 .camera img{
    height: 100%;
    border-radius: 9px;
-   max-width: 550PX;
+   max-width: 100%;
 }
 .flex{
         display: grid;
@@ -397,8 +397,8 @@ nav{
 }
 @media(max-width:960px){
     .why-this-course{
-        grid-template-columns: 0.5fr 1fr;
-        gap: 16px;
+        grid-template-columns: 1fr 1fr;
+        gap: 1;
     }
 }
 @media(max-width:810px){
@@ -406,6 +406,44 @@ nav{
         display: block;
     }
     .why-this-course{
-        display: block;
+        grid-template-columns: 1fr;
+        margin-inline: 50px;
     }
-}@media
+    .camera {
+        max-width: 100%;
+        height: 200px;
+
+        img{
+            width: 100%;
+        }
+    }
+    .course{
+        max-width: 500px;
+        margin-inline: auto;
+    }
+
+}
+
+@media(max-width:960px){
+    .flex{
+        grid-template-columns: 1fr 1fr;
+        gap: 1;
+    }
+}
+@media(max-width:810px){
+    .flex{
+        grid-template-columns: 1fr;
+        margin-inline: 50px;
+    }
+    .second-div{
+        max-width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .firdt-div{
+        max-width: 500px;
+        margin-inline: auto;
+
+    }
+}
